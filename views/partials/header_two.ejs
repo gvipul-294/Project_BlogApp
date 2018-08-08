@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+	<head>
+	    <link rel="shortcut icon" type="image/png" href="favicon.png" />
+		<title>Blog Application</title>
+		<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.2.13/semantic.css">
+		<link rel="stylesheet" type="text/css" href="/stylesheets/app.css">
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+		<script>
+			$('.ui.search')
+  			.search({
+    		source: Blog[title]
+  			});
+
+		</script>
+		
+	</head>
+	<body>
+		<div class ="ui inverted menu">
+			<div class="ui container">
+				<div class="header item"><i class="idea icon"></i><a href="/">Blog Site</a></div>
+				<a href="/" class="item">Home</a>
+				<a href="/blogs/new" class="item">New Post</a>
+				<div class="ui item search">
+					<div class="ui icon input">
+					  <input class="prompt" type="text" placeholder="Search blogs...">
+					  <i class="search icon"></i>
+					</div>
+					<div class="results"></div>
+				</div>
+				<div class="right menu">
+                        <a href="/blogs/preview" class="item">Welcome!</a>
+				</div>
+			</div>
+
+		</div>
