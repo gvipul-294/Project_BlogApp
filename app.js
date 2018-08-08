@@ -25,7 +25,7 @@ const options = {
     // If not connected, return errors immediately rather than waiting for reconnect
     bufferMaxEntries: 0
   };
- mongoose.connect("mongodb://vipul1:exam12345@ds125871.mlab.com:25871/blog_app294", options);
+ mongoose.connect("mongodb://vipul1:*****@ds125871.mlab.com:25871/blog_app294", options);
  mongoose.connection.on('open', () => {
    console.log('Connected to mongodb server.');
   })
@@ -36,7 +36,7 @@ const options = {
 
 // const MongoClient = require('mongodb').MongoClient;
 
-// const MONGO_URL = 'mongodb://vipul1:exam12345@ds125871.mlab.com:25871/blog_app294';
+// const MONGO_URL = 'mongodb://vipul1:******@ds125871.mlab.com:25871/blog_app294';
 
 // MongoClient.connect(MONGO_URL, (err, db) => {  
 //   if (err) {
